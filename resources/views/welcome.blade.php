@@ -80,7 +80,7 @@
                     <a href="{{ url('/dashboard') }}" class="px-6 py-2 btn-luxury rounded-full font-bold text-[10px] uppercase tracking-widest">Dashboard</a>
                 @else
                     <a href="{{ route('login') }}" class="hidden sm:inline text-[10px] font-bold uppercase tracking-widest hover:text-[#d4af37]">Connexion</a>
-                    <a href="{{ route('login') }}" class="px-6 py-2.5 btn-luxury rounded-full font-bold text-[10px] uppercase tracking-widest shadow-lg">Réserver</a>
+                    <a href="{{ route('register') }}" class="px-6 py-2.5 btn-luxury rounded-full font-bold text-[10px] uppercase tracking-widest shadow-lg">s'inscrire</a>
                 @endauth
             </div>
         </div>
@@ -105,7 +105,7 @@
                 Bienvenue au Lycée Mahidio. Un écrin de prestige où chaque détail est orchestré numériquement pour magnifier vos événements les plus précieux.
             </p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
-                <a href="{{ route('login') }}" class="w-full sm:w-auto px-12 py-5 btn-luxury rounded-2xl font-black text-xs uppercase tracking-[0.2em]" wire: navigate>Commencer l'expérience</a>
+                <a href="{{ route('register') }}" class="w-full sm:w-auto px-12 py-5 btn-luxury rounded-2xl font-black text-xs uppercase tracking-[0.2em]" wire: navigate>Commencer l'expérience</a>
                 <a href="#services" class="w-full sm:w-auto px-12 py-5 border border-[#d4af37]/30 rounded-2xl font-black text-xs uppercase tracking-[0.2em] hover:bg-white/5 transition">Nos Services</a>
             </div>
         </div>
@@ -198,7 +198,7 @@
                     <ul class="space-y-4 text-sm text-gray-500">
                         <li class="flex items-start gap-3"><i class="fas fa-map-marker-alt text-[#d4af37]"></i> Kamina, Haut-Lomami, RDC</li>
                         <li class="flex items-center gap-3"><i class="fas fa-envelope text-[#d4af37]"></i> contact@mahidio.cd</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-phone-alt text-[#d4af37]"></i> +243 000 000 000</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-phone-alt text-[#d4af37]"></i> +243 970 031 706 </li>
                     </ul>
                 </div>
             </div>

@@ -164,13 +164,13 @@ $changeRole = function (User $user, $newRole) {
             <form wire:submit.prevent="saveUser" class="p-8 space-y-5">
                 <div>
                     <label class="block text-sm font-bold text-slate-700 mb-2">Nom complet</label>
-                    <input wire:model="name" type="text" class="w-full rounded-2xl border-slate-200 focus:ring-indigo-500 shadow-sm" placeholder="Ex: Jean Dupont">
+                    <input wire:model="name" type="text" class="w-full rounded-2xl border-slate-200 focus:ring-indigo-500 shadow-sm" placeholder="Ex: oscar Munuku">
                     @error('name') <span class="text-red-500 text-xs mt-1">{{ $message }}</span> @enderror
                 </div>
 
                 <div>
                     <label class="block text-sm font-bold text-slate-700 mb-2">Adresse Email</label>
-                    <input wire:model="email" type="email" class="w-full rounded-2xl border-slate-200 focus:ring-indigo-500 shadow-sm" placeholder="jean@mahidio.com">
+                    <input wire:model="email" type="email" class="w-full rounded-2xl border-slate-200 focus:ring-indigo-500 shadow-sm" placeholder="oscar@mahidio.com">
                     @error('email') <span class="text-red-500 text-xs mt-1">{{ $message }}</span> @enderror
                 </div>
 
