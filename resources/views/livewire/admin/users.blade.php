@@ -6,7 +6,6 @@ use function Livewire\Volt\{state, with, layout, usesPagination, rules};
 usesPagination();
 layout('layouts.app');
 
-// États pour la gestion du Modal et du Formulaire
 state([
     'search' => '', 
     'showModal' => false,
@@ -118,11 +117,14 @@ $changeRole = function (User $user, $newRole) {
                         </td>
                         <td class="px-8 py-5">
                             <select wire:change="changeRole({{ $user->id }}, $event.target.value)" 
-                                class="text-[10px] font-black uppercase tracking-tighter py-1 pl-3 pr-8 rounded-lg border-slate-200 focus:ring-indigo-500 {{ $user->role === 'admin' ? 'text-purple-600 bg-purple-50' : 'text-slate-600 bg-slate-50' }}">
-                                <option value="client">Client</option>
-                                <option value="reserviste">Réserviste</option>
-                                <option value="responsable">Responsable</option>
-                                <option value="admin">Admin</option>
+                                class="text-[10px] font-black uppercase tracking-tighter py-1 pl-3 pr-8 rounded-lg border-slate-200 focus:ring-indigo-500 
+                                {{ $user->role === 'admin' ? 'text-purple-600 bg-purple-50' : 'text-slate-600 bg-slate-50' }}">
+                                
+                                <option value="client" @selected($user->role === 'client')>Client</option>
+                                <option value="reserviste" @selected($user->role === 'reserviste')>Réserviste</option>
+                                <option value="responsable" @selected($user->role === 'responsable')>Responsable</option>
+                                <option value="admin" @selected($user->role === 'admin')>Admin</option>
+                                
                             </select>
                         </td>
                         <td class="px-8 py-5 text-sm text-slate-500 font-medium">
