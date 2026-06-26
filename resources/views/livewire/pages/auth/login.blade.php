@@ -26,7 +26,7 @@ $login = function () {
     <!-- CÔTÉ GAUCHE : VISUEL IMMERSIF (Masqué sur mobile) -->
     <div class="hidden md:flex md:w-1/2 relative overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-br from-black/80 via-black/40 to-transparent z-10"></div>
-        <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&q=80" 
+        <img src="{{ asset('images/salle.png') }}"
              class="absolute inset-0 w-full h-full object-cover transform scale-110" alt="Luxe">
         
         <div class="relative z-20 m-auto text-center px-12">

@@ -40,7 +40,7 @@ new #[Layout('layouts.guest')] class extends Component
         
         <!-- CÔTÉ GAUCHE : VISUEL & MESSAGE -->
         <div class="hidden lg:flex lg:w-1/2 relative bg-indigo-900 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&q=80" 
+            <img src="{{ asset('images/salle.png') }}" 
                  class="absolute inset-0 w-full h-full object-cover opacity-50 scale-110 hover:scale-100 transition-transform duration-[5s]" alt="Salle Mahidio">
             <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
             

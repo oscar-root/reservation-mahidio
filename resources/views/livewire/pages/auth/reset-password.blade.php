@@ -53,10 +53,6 @@ new #[Layout('layouts.guest')] class extends Component
                 event(new PasswordReset($user));
             }
         );
-
-        // If the password was successfully reset, we will redirect the user back to
-        // the application's home authenticated view. If there is an error we can
-        // redirect them back to where they came from with their error message.
         if ($status != Password::PASSWORD_RESET) {
             $this->addError('email', __($status));
 

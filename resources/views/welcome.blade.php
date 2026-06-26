@@ -64,7 +64,7 @@
         <div class="max-w-7xl mx-auto px-6 lg:px-12 flex justify-between h-20 items-center">
             <div class="flex items-center gap-3">
                 <div class="w-10 h-10 bg-gradient-to-br from-[#d4af37] to-[#b8960c] rounded-xl flex items-center justify-center">
-                    <span class="text-black font-bold text-xl font-serif-luxury">M</span>
+                    <img src="{{ asset('images/mahidio.png') }}" class="w-full h-full object-cover alt="Hero">
                 </div>
                 <span class="text-xl font-serif-luxury font-bold tracking-widest uppercase">Salle <span class="gradient-text">Mahidio</span></span>
             </div>
@@ -90,7 +90,7 @@
     <section id="accueil" class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden text-center">
         <div class="absolute inset-0 z-0">
             <div class="absolute inset-0 bg-black/60 z-10"></div>
-            <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&q=80" class="w-full h-full object-cover opacity-40" alt="Hero">
+            <img src="{{ asset('images/salle.png') }}" class="w-full h-full object-cover opacity-300" alt="Hero">
         </div>
 
         <div class="max-w-5xl mx-auto px-6 relative z-20 section-reveal">
@@ -163,7 +163,7 @@
                 </div>
             </div>
             <div class="rounded-[40px] overflow-hidden border border-[#d4af37]/20 shadow-2xl section-reveal">
-                <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&q=80" class="w-full h-[500px] object-cover opacity-70" alt="About">
+                <img src="{{ asset('images/danse.png') }}" class="w-full h-[500px] object-cover opacity-100" alt="About">
             </div>
         </div>
     </section>
